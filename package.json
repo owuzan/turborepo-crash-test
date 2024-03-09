@@ -8,11 +8,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo build --filter=docs^... && changeset publish"
+    "release:all": "turbo build --filter=piksel-* && changeset version && changeset publish",
+    "release:hooks": "cd packages/hooks && turbo build && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@acme/eslint-config": "*",
     "@changesets/cli": "^2.27.1",
+    "@piksel-ui/eslint-config": "*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "turbo": "latest"
@@ -22,7 +23,7 @@
   },
   "packageManager": "yarn@1.22.21",
   "workspaces": [
-    "apps/*",
     "packages/*"
-  ]
+  ],
+  "version": "0.0.0"
 }
