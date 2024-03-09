@@ -6,7 +6,7 @@
  */
 export function toSlug(str: string): string {
   let s = str;
-  console.log(1);
+  console.log(2);
 
   if (!s) {
     return "";
