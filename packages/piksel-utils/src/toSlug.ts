@@ -5,6 +5,8 @@
  * @return {string} The slugified string.
  */
 export function toSlug(str: string): string {
+  console.log("toSlug");
+
   let s = str;
   if (!s) {
     return "";

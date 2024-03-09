@@ -1,6 +1,6 @@
 {
   "name": "@piksel-ui/hooks",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,6 @@
     "release": "turbo build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
     "@piksel-ui/eslint-config": "*",
     "@piksel-ui/tsconfig": "*",
     "@types/react": "^18.2.61",
