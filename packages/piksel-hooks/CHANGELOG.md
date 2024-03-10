@@ -1,5 +1,11 @@
 # @piksel-ui/hooks
 
+## 4.0.2
+
+### Patch Changes
+
+- summary
+
 ## 4.0.1
 
 ### Patch Changes
