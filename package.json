@@ -8,8 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release:all": "turbo build --filter=piksel-... && changeset version && changeset publish",
-    "release:hooks": "turbo build --filter=piksel-hooks && changeset version && changeset publish"
+    "release": "yarn clean && yarn install && yarn build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

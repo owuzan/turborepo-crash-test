@@ -1,6 +1,6 @@
 {
   "name": "@piksel-ui/hooks",
-  "version": "2.0.0",
+  "version": "4.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -15,6 +15,7 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "changeset": "changeset",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "prerelease": "echo 'kjahsdkjhasj",
     "release": "turbo build && changeset publish"
   },
   "devDependencies": {
